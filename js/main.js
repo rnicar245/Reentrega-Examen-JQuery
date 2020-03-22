@@ -26,7 +26,7 @@ $(function() {
 
     $("#creaTitulos").click(function () {
         for(let i = 0; i<$("input").val(); i++){
-            $('<p>Título '+contadorTitulos+'</p>')
+            $('<h1>Título '+contadorTitulos+'</h1>')
             .mousemove(function(){
                 $(this).css("backgroundColor", generaColor)
             })
@@ -39,7 +39,7 @@ $(function() {
     $("#anulaRaton").click(function () {
         $("#sectionAnnadidos h1").off();
     });
-
+    
     let generaColor = function(){
         let colores = ['yellow', 'pink', 'lightgray'];
         return colores[Math.floor(Math.random() * (colores.length))];
